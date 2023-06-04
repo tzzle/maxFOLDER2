@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 384px;
+    height: 726px;
+    background: #010A43;
+}
+
+.intro {
+    text-align: center;
+}
+
+.icon {
+    margin-bottom: 10px;
+}
+
+i.code-icon {
+    font-size: 47px;
+    color: #E8F9FD;
+}
+
+.codestreak {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.codestreak a {
+    text-decoration: none;
+    color: #E8F9FD;
+    font-size: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 5px;
+    color: #E8F9FD;
+    font-family: 'Noto Sans', sans-serif;
+}

@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="index2.js"></script>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+    background: #010A43;
+    color: #E8F9FD;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+    background: #010A43;
+}
+
+.main {
+    position: absolute;
+    top: 50px;
+}
+
+.month {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 36px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: repeat(6, 40px);
+    grid-column-gap: 5px;
+    margin-left: 38px;
+}
+
+.day {
+    text-align: center;
+}
+
+.date-holder:not(.no-border) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.date-holder a {
+    text-decoration: none;
+    color: #E8F9FD;
+}
+
+.button {
+    background: transparent;
+    border: none;
+    color: #E8F9FD;
+    font-size: 16px;
+}
+
+.remove {
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <p>Code at least 4hrs every day!</p>
+    </header>
+    <main class="main">
+        <p class="month">April</p>       <!--APRIL BEGINNING!!! - - - APRIL BEGINNING!!! - - - APRIL BEGINNING!!! - - - APRIL BEGINNING!!! - - - -->
+        <div class="calendar">
+            <div>
+                <p class="day">MON</p>
+            </div>
+            <div>
+                <p class="day">TUE</p>
+            </div>
+            <div>
+                <p class="day">WED</p>
+            </div>
+            <div>
+                <p class="day">THU</p>
+            </div>
+            <div>
+                <p class="day">FRI</p>
+            </div>
+            <div>
+                <p class="day">SAT</p>
+            </div>
+            <div>
+                <p class="day">SUN</p>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>1</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>2</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>3</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>4</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>5</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>6</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>7</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>8</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>9</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>10</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>11</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>12</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>13</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>14</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>15</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>16</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>17</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>18</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>19</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>20</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>21</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>22</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>23</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>24</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>25</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>26</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>27</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#"><del>28</del></a>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-1" class="date-holder">
+                    <button class="button" onclick="tick1()">29</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-2" class="date-holder">
+                    <button class="button" onclick="tick2()">30</button>
+                </div>
+            </div>
+        </div>                  
+        <!-- APRIL END!!! - - -  APRIL END!!! - - -  APRIL END!!! - - -  APRIL END!!! - - -  APRIL END!!! - - -  APRIL END!!! - - -  -->
+        <p class="month">May</p>      <!--MAY BEGINNING!!! - - - MAY BEGINNING!!! - - - MAY BEGINNING!!! - - - MAY BEGINNING!!! - - -  -->
+        <div class="calendar">
+            <div>
+                <p class="day">MON</p>
+            </div>
+            <div>
+                <p class="day">TUE</p>
+            </div>
+            <div>
+                <p class="day">WED</p>
+            </div>
+            <div>
+                <p class="day">THU</p>
+            </div>
+            <div>
+                <p class="day">FRI</p>
+            </div>
+            <div>
+                <p class="day">SAT</p>
+            </div>
+            <div>
+                <p class="day">SUN</p>
+            </div>
+            <div class="helper">
+                <div id="tick-3" class="date-holder">
+                    <button class="button" onclick="tick3()">1</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-4" class="date-holder">
+                    <button class="button" onclick="tick4()">2</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-5" class="date-holder">
+                    <button class="button" onclick="tick5()">3</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-6" class="date-holder">
+                    <button class="button" onclick="tick6()">4</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-7" class="date-holder">
+                    <button class="button" onclick="tick7()">5</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-8" class="date-holder">
+                    <button class="button" onclick="tick8()">6</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-9" class="date-holder">
+                    <button class="button" onclick="tick9()">7</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-10" class="date-holder">
+                    <button class="button" onclick="tick10()">8</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-11" class="date-holder">
+                    <button class="button" onclick="tick11()">9</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-12" class="date-holder">
+                    <button class="button" onclick="tick12()">10</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-13" class="date-holder">
+                    <button class="button" onclick="tick13()">11</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-14" class="date-holder">
+                    <button class="button" onclick="tick14()">12</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-15" class="date-holder">
+                    <button class="button" onclick="tick15()">13</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-16" class="date-holder">
+                    <button class="button" onclick="tick16()">14</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-17" class="date-holder">
+                    <button class="button" onclick="tick17()">15</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-18" class="date-holder">
+                    <button class="button" onclick="tick18()">16</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-19" class="date-holder">
+                    <button class="button" onclick="tick19()">17</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-20" class="date-holder">
+                    <button class="button" onclick="tick20()">18</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-21" class="date-holder">
+                    <button class="button" onclick="tick21()">19</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-22" class="date-holder">
+                    <button class="button" onclick="tick22()">20</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-23" class="date-holder">
+                    <button class="button" onclick="tick23()">21</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-24" class="date-holder">
+                    <button class="button" onclick="tick24()">22</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-25" class="date-holder">
+                    <button class="button" onclick="tick25()">23</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-26" class="date-holder">
+                    <button class="button" onclick="tick26()">24</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-27" class="date-holder">
+                    <button class="button" onclick="tick27()">25</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-28" class="date-holder">
+                    <button class="button" onclick="tick28()">26</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-29" class="date-holder">
+                    <button class="button" onclick="tick29()">27</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-30" class="date-holder">
+                    <button class="button" onclick="tick30()">28</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-31" class="date-holder">
+                    <button class="button" onclick="tick31()">29</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-32" class="date-holder">
+                    <button class="button" onclick="tick32()">30</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-33" class="date-holder">
+                    <button class="button" onclick="tick33()">31</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+        </div>       <!--MAY ENDING!!! - - - MAY ENDING!!! - - - MAY ENDING!!! - - - MAY ENDING!!! - - - MAY ENDING!!! - - - MAY ENDING!!! - - - -->
+        <p class="month">June</p>      <!--JUNE BEGINNING!!! - - - JUNE BEGINNING!!! - - - JUNE BEGINNING!!! - - - JUNE BEGINNING!!! - - -  -->
+        <div class="calendar">
+            <div>
+                <p class="day">MON</p>
+            </div>
+            <div>
+                <p class="day">TUE</p>
+            </div>
+            <div>
+                <p class="day">WED</p>
+            </div>
+            <div>
+                <p class="day">THU</p>
+            </div>
+            <div>
+                <p class="day">FRI</p>
+            </div>
+            <div>
+                <p class="day">SAT</p>
+            </div>
+            <div>
+                <p class="day">SUN</p>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-34" class="date-holder">
+                    <button class="button" onclick="tick34()">1</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-35" class="date-holder">
+                    <button class="button" onclick="tick35()">2</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-36" class="date-holder">
+                    <button class="button" onclick="tick36()">3</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-37" class="date-holder">
+                    <button class="button" onclick="tick37()">4</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-38" class="date-holder">
+                    <button class="button" onclick="tick38()">5</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-39" class="date-holder">
+                    <button class="button" onclick="tick39()">6</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-40" class="date-holder">
+                    <button class="button" onclick="tick40()">7</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-41" class="date-holder">
+                    <button class="button" onclick="tick41()">8</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-42" class="date-holder">
+                    <button class="button" onclick="tick42()">9</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-43" class="date-holder">
+                    <button class="button" onclick="tick43()">10</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-44" class="date-holder">
+                    <button class="button" onclick="tick44()">11</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-45" class="date-holder">
+                    <button class="button" onclick="tick45()">12</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-46" class="date-holder">
+                    <button class="button" onclick="tick46()">13</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-47" class="date-holder">
+                    <button class="button" onclick="tick47()">14</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-48" class="date-holder">
+                    <button class="button" onclick="tick48()">15</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-49" class="date-holder">
+                    <button class="button" onclick="tick49()">16</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-50" class="date-holder">
+                    <button class="button" onclick="tick50()">17</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-51" class="date-holder">
+                    <button class="button" onclick="tick51()">18</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-52" class="date-holder">
+                    <button class="button" onclick="tick52()">19</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-53" class="date-holder">
+                    <button class="button" onclick="tick53()">20</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-54" class="date-holder">
+                    <button class="button" onclick="tick54()">21</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-55" class="date-holder">
+                    <button class="button" onclick="tick55()">22</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-56" class="date-holder">
+                    <button class="button" onclick="tick56()">23</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-57" class="date-holder">
+                    <button class="button" onclick="tick57()">24</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-58" class="date-holder">
+                    <button class="button" onclick="tick58()">25</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-59" class="date-holder">
+                    <button class="button" onclick="tick59()">26</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-60" class="date-holder">
+                    <button class="button" onclick="tick60()">27</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-61" class="date-holder">
+                    <button class="button" onclick="tick61()">28</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-62" class="date-holder">
+                    <button class="button" onclick="tick62()">29</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-63" class="date-holder">
+                    <button class="button" onclick="tick63()">30</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+        </div>        <!--JUNE ENDING!!! - - - JUNE ENDING!!! - - - JUNE ENDING!!! - - - JUNE ENDING!!! - - - JUNE ENDING!!! - - - JUNE ENDING!!! - - - JUNE ENDING!!! - - - -->
+        <p class="month">July</p>      <!--JULY BEGINNING!!! - - - JULY BEGINNING!!! - - - JULY BEGINNING!!! - - - JULY BEGINNING!!! - - -  -->
+        <div class="calendar">
+            <div>
+                <p class="day">MON</p>
+            </div>
+            <div>
+                <p class="day">TUE</p>
+            </div>
+            <div>
+                <p class="day">WED</p>
+            </div>
+            <div>
+                <p class="day">THU</p>
+            </div>
+            <div>
+                <p class="day">FRI</p>
+            </div>
+            <div>
+                <p class="day">SAT</p>
+            </div>
+            <div>
+                <p class="day">SUN</p>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-64" class="date-holder">
+                    <button class="button" onclick="tick64()">1</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-65" class="date-holder">
+                    <button class="button" onclick="tick65()">2</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-66" class="date-holder">
+                    <button class="button" onclick="tick66()">3</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-67" class="date-holder">
+                    <button class="button" onclick="tick67()">4</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-68" class="date-holder">
+                    <button class="button" onclick="tick68()">5</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-69" class="date-holder">
+                    <button class="button" onclick="tick69()">6</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-70" class="date-holder">
+                    <button class="button" onclick="tick70()">7</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-71" class="date-holder">
+                    <button class="button" onclick="tick71()">8</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-72" class="date-holder">
+                    <button class="button" onclick="tick72()">9</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-73" class="date-holder">
+                    <button class="button" onclick="tick73()">10</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-74" class="date-holder">
+                    <button class="button" onclick="tick74()">11</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-75" class="date-holder">
+                    <button class="button" onclick="tick75()">12</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-76" class="date-holder">
+                    <button class="button" onclick="tick76()">13</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-77" class="date-holder">
+                    <button class="button" onclick="tick77()">14</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-78" class="date-holder">
+                    <button class="button" onclick="tick78()">15</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-79" class="date-holder">
+                    <button class="button" onclick="tick79()">16</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-80" class="date-holder">
+                    <button class="button" onclick="tick80()">17</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-81" class="date-holder">
+                    <button class="button" onclick="tick81()">18</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-82" class="date-holder">
+                    <button class="button" onclick="tick82()">19</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-83" class="date-holder">
+                    <button class="button" onclick="tick83()">20</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-84" class="date-holder">
+                    <button class="button" onclick="tick84()">21</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-85" class="date-holder">
+                    <button class="button" onclick="tick85()">22</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-86" class="date-holder">
+                    <button class="button" onclick="tick86()">23</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-87" class="date-holder">
+                    <button class="button" onclick="tick87()">24</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-88" class="date-holder">
+                    <button class="button" onclick="tick88()">25</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-89" class="date-holder">
+                    <button class="button" onclick="tick89()">26</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-90" class="date-holder">
+                    <button class="button" onclick="tick90()">27</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-91" class="date-holder">
+                    <button class="button" onclick="tick91()">28</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-92" class="date-holder">
+                    <button class="button" onclick="tick92()">29</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-93" class="date-holder">
+                    <button class="button" onclick="tick93()">30</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-94" class="date-holder">
+                    <button class="button" onclick="tick94()">31</button>
+                </div>
+            </div>
+        </div> <!--JULY ENDING!!! - - - JULY ENDING!!! - - - JULY ENDING!!! - - - JULY ENDING!!! - - - JULY ENDING!!! - - - -->
+        <p class="month">August</p>      <!--AUGUST BEGINNING!!! - - - AUGUST BEGINNING!!! - - - AUGUST BEGINNING!!! - - - AUGUST BEGINNING!!! - - -  -->
+        <div class="calendar">
+            <div>
+                <p class="day">MON</p>
+            </div>
+            <div>
+                <p class="day">TUE</p>
+            </div>
+            <div>
+                <p class="day">WED</p>
+            </div>
+            <div>
+                <p class="day">THU</p>
+            </div>
+            <div>
+                <p class="day">FRI</p>
+            </div>
+            <div>
+                <p class="day">SAT</p>
+            </div>
+            <div>
+                <p class="day">SUN</p>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-95" class="date-holder">
+                    <button class="button" onclick="tick95()">1</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-96" class="date-holder">
+                    <button class="button" onclick="tick96()">2</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-97" class="date-holder">
+                    <button class="button" onclick="tick97()">3</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-98" class="date-holder">
+                    <button class="button" onclick="tick98()">4</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-99" class="date-holder">
+                    <button class="button" onclick="tick99()">5</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-100" class="date-holder">
+                    <button class="button" onclick="tick100()">6</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-101" class="date-holder">
+                    <button class="button" onclick="tick101()">7</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-102" class="date-holder">
+                    <button class="button" onclick="tick102()">8</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-103" class="date-holder">
+                    <button class="button" onclick="tick103()">9</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-104" class="date-holder">
+                    <button class="button" onclick="tick104()">10</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-105" class="date-holder">
+                    <button class="button" onclick="tick105()">11</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-106" class="date-holder">
+                    <button class="button" onclick="tick106()">12</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-107" class="date-holder">
+                    <button class="button" onclick="tick107()">13</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-108" class="date-holder">
+                    <button class="button" onclick="tick108()">14</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-109" class="date-holder">
+                    <button class="button" onclick="tick109()">15</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-110" class="date-holder">
+                    <button class="button" onclick="tick110()">16</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-111" class="date-holder">
+                    <button class="button" onclick="tick111()">17</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-112" class="date-holder">
+                    <button class="button" onclick="tick112()">18</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-113" class="date-holder">
+                    <button class="button" onclick="tick113()">19</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-114" class="date-holder">
+                    <button class="button" onclick="tick114()">20</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-115" class="date-holder">
+                    <button class="button" onclick="tick115()">21</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-116" class="date-holder">
+                    <button class="button" onclick="tick116()">22</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-117" class="date-holder">
+                    <button class="button" onclick="tick117()">23</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-118" class="date-holder">
+                    <button class="button" onclick="tick118()">24</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-119" class="date-holder">
+                    <button class="button" onclick="tick119()">25</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-120" class="date-holder">
+                    <button class="button" onclick="tick120()">26</button>
+                </div> 
+            </div>
+            <div class="helper">
+                <div id="tick-121" class="date-holder">
+                    <button class="button" onclick="tick121()">27</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-122" class="date-holder">
+                    <button class="button" onclick="tick122()">28</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-123" class="date-holder">
+                    <button class="button" onclick="tick123()">29</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-124" class="date-holder">
+                    <button class="button" onclick="tick124()">30</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-125" class="date-holder">
+                    <button class="button" onclick="tick125()">31</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+        </div>    <!-- AUGUST ENDING!!! - - - AUGUST ENDING!!! - - - AUGUST ENDING!!! - - - AUGUST ENDING!!! - - - AUGUST ENDING!!! - - - -->
+        <p class="month">September</p>      <!--SEPTEMBER BEGINNING!!! - - - SEPTEMBER BEGINNING!!! - - - SEPTEMBER BEGINNING!!! - - - SEPTEMBER BEGINNING!!! - - -  -->
+        <div class="calendar">
+            <div>
+                <p class="day">MON</p>
+            </div>
+            <div>
+                <p class="day">TUE</p>
+            </div>
+            <div>
+                <p class="day">WED</p>
+            </div>
+            <div>
+                <p class="day">THU</p>
+            </div>
+            <div>
+                <p class="day">FRI</p>
+            </div>
+            <div>
+                <p class="day">SAT</p>
+            </div>
+            <div>
+                <p class="day">SUN</p>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-126" class="date-holder">
+                    <button class="button" onclick="tick126()">1</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-127" class="date-holder">
+                    <button class="button" onclick="tick127()">2</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-128" class="date-holder">
+                    <button class="button" onclick="tick128()">3</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-129" class="date-holder">
+                    <button class="button" onclick="tick129()">4</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-130" class="date-holder">
+                    <button class="button" onclick="tick130()">5</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-131" class="date-holder">
+                    <button class="button" onclick="tick131()">6</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-132" class="date-holder">
+                    <button class="button" onclick="tick132()">7</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-133" class="date-holder">
+                    <button class="button" onclick="tick133()">8</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-134" class="date-holder">
+                    <button class="button" onclick="tick134()">9</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-135" class="date-holder">
+                    <button class="button" onclick="tick135()">10</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-136" class="date-holder">
+                    <button class="button" onclick="tick136()">11</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-137" class="date-holder">
+                    <button class="button" onclick="tick137()">12</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-138" class="date-holder">
+                    <button class="button" onclick="tick138()">13</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-139" class="date-holder">
+                    <button class="button" onclick="tick139()">14</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-140" class="date-holder">
+                    <button class="button" onclick="tick140()">15</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-141" class="date-holder">
+                    <button class="button" onclick="tick141()">16</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-142" class="date-holder">
+                    <button class="button" onclick="tick142()">17</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-143" class="date-holder">
+                    <button class="button" onclick="tick143()">18</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-144" class="date-holder">
+                    <button class="button" onclick="tick144()">19</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-145" class="date-holder">
+                    <button class="button" onclick="tick145()">20</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-146" class="date-holder">
+                    <button class="button" onclick="tick146()">21</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-147" class="date-holder">
+                    <button class="button" onclick="tick147()">22</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-148" class="date-holder">
+                    <button class="button" onclick="tick148()">23</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-149" class="date-holder">
+                    <button class="button" onclick="tick149()">24</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-150" class="date-holder">
+                    <button class="button" onclick="tick150()">25</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-151" class="date-holder">
+                    <button class="button" onclick="tick151()">26</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-152" class="date-holder">
+                    <button class="button" onclick="tick152()">27</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-153" class="date-holder">
+                    <button class="button" onclick="tick153()">28</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-154" class="date-holder">
+                    <button class="button" onclick="tick154()">29</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-155" class="date-holder">
+                    <button class="button" onclick="tick155()">30</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+        </div>       <!--SEPTEMBER ENDING!!! - - - SEPTEMBER ENDING!!! - - - SEPTEMBER ENDING!!! - - - SEPTEMBER ENDING!!! - - - -->
+        <p class="month">October</p>      <!--OCTOBER BEGINNING!!! - - - OCTOBER BEGINNING!!! - - - OCTOBER BEGINNING!!! - - - OCTOBER BEGINNING!!! - - -  -->
+        <div class="calendar">
+            <div>
+                <p class="day">MON</p>
+            </div>
+            <div>
+                <p class="day">TUE</p>
+            </div>
+            <div>
+                <p class="day">WED</p>
+            </div>
+            <div>
+                <p class="day">THU</p>
+            </div>
+            <div>
+                <p class="day">FRI</p>
+            </div>
+            <div>
+                <p class="day">SAT</p>
+            </div>
+            <div>
+                <p class="day">SUN</p>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-156" class="date-holder">
+                    <button class="button" onclick="tick156()">1</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-157" class="date-holder">
+                    <button class="button" onclick="tick157()">2</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-158" class="date-holder">
+                    <button class="button" onclick="tick158()">3</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-159" class="date-holder">
+                    <button class="button" onclick="tick159()">4</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-160" class="date-holder">
+                    <button class="button" onclick="tick160()">5</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-161" class="date-holder">
+                    <button class="button" onclick="tick161()">6</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-162" class="date-holder">
+                    <button class="button" onclick="tick162()">7</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-163" class="date-holder">
+                    <button class="button" onclick="tick163()">8</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-164" class="date-holder">
+                    <button class="button" onclick="tick164()">9</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-165" class="date-holder">
+                    <button class="button" onclick="tick165()">10</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-166" class="date-holder">
+                    <button class="button" onclick="tick166()">11</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-167" class="date-holder">
+                    <button class="button" onclick="tick167()">12</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-168" class="date-holder">
+                    <button class="button" onclick="tick168()">13</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-169" class="date-holder">
+                    <button class="button" onclick="tick169()">14</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-170" class="date-holder">
+                    <button class="button" onclick="tick170()">15</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-171" class="date-holder">
+                    <button class="button" onclick="tick171()">16</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-172" class="date-holder">
+                    <button class="button" onclick="tick172()">17</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-173" class="date-holder">
+                    <button class="button" onclick="tick173()">18</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-174" class="date-holder">
+                    <button class="button" onclick="tick174()">19</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-175" class="date-holder">
+                    <button class="button" onclick="tick175()">20</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-176" class="date-holder">
+                    <button class="button" onclick="tick176()">21</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-177" class="date-holder">
+                    <button class="button" onclick="tick177()">22</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-178" class="date-holder">
+                    <button class="button" onclick="tick178()">23</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-179" class="date-holder">
+                    <button class="button" onclick="tick179()">24</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-180" class="date-holder">
+                    <button class="button" onclick="tick180()">25</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-181" class="date-holder">
+                    <button class="button" onclick="tick181()">26</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-182" class="date-holder">
+                    <button class="button" onclick="tick182()">27</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-183" class="date-holder">
+                    <button class="button" onclick="tick183()">28</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-184" class="date-holder">
+                    <button class="button" onclick="tick184()">29</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-185" class="date-holder">
+                    <button class="button" onclick="tick185()">30</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-186" class="date-holder">
+                    <button class="button" onclick="tick186()">31</button>
+                </div>
+            </div>
+        </div> <!-- OCTOBER ENDING!!! - - - OCTOBER ENDING!!! - - - OCTOBER ENDING!!! - - - OCTOBER ENDING!!! - - - -->
+        <p class="month">November</p>      <!--NOVEMBER BEGINNING!!! - - - NOVEMBER BEGINNING!!! - - - NOVEMBER BEGINNING!!! - - - NOVEMBER BEGINNING!!! - - -  -->
+        <div class="calendar">
+            <div>
+                <p class="day">MON</p>
+            </div>
+            <div>
+                <p class="day">TUE</p>
+            </div>
+            <div>
+                <p class="day">WED</p>
+            </div>
+            <div>
+                <p class="day">THU</p>
+            </div>
+            <div>
+                <p class="day">FRI</p>
+            </div>
+            <div>
+                <p class="day">SAT</p>
+            </div>
+            <div>
+                <p class="day">SUN</p>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-187" class="date-holder">
+                    <button class="button" onclick="tick187()">1</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-188" class="date-holder">
+                    <button class="button" onclick="tick188()">2</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-189" class="date-holder">
+                    <button class="button" onclick="tick189()">3</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-190" class="date-holder">
+                    <button class="button" onclick="tick190()">4</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-191" class="date-holder">
+                    <button class="button" onclick="tick191()">5</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-192" class="date-holder">
+                    <button class="button" onclick="tick192()">6</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-193" class="date-holder">
+                    <button class="button" onclick="tick193()">7</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-194" class="date-holder">
+                    <button class="button" onclick="tick194()">8</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-195" class="date-holder">
+                    <button class="button" onclick="tick195()">9</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-196" class="date-holder">
+                    <button class="button" onclick="tick196()">10</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-197" class="date-holder">
+                    <button class="button" onclick="tick197()">11</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-198" class="date-holder">
+                    <button class="button" onclick="tick198()">12</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-199" class="date-holder">
+                    <button class="button" onclick="tick199()">13</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div id="tick-200" class="date-holder">
+                    <button class="button" onclick="tick200()">14</button>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">15</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">16</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">17</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">18</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">19</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">20</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">21</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">22</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">23</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">24</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">25</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">26</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">27</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">28</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">29</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder">
+                    <a href="#">30</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="date-holder no-border">
+                    <a class="remove" href="#">3</a>
+                </div>
+            </div>
+        </div>   <!--NOVEMBER ENDING!!! - - - NOVEMBER ENDING!!! - - - NOVEMBER ENDING!!! - - - NOVEMBER ENDING!!! - - - -->
+    </main>
+</body>
+</html>
